@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="Estilo.css">
+  </head>
+
+  <body>
+    <div id="Contenido">
+
+      <header id="cabezazo">
+        <h1>Pokedex</h1>
+      </header>
+
+      <nav id="Menu">
+        <ul>
+          <li><input type="text" name="Buscar" id="BuscarInput" placeholder="Nombre de pokemon"/></li>
+          <li><button id="TipoTodos" type="button" onclick="ResetPagina()" >Todos</button></li>
+          <li><button id="TipoTodos" type="button" onclick="DamePokemonesDeTipoEspecifico(1)" >Normal</button></li>
+          <li><button id="TipoTodos" type="button" onclick="DamePokemonesDeTipoEspecifico(2)" >Lucha</button></li>
+          <li><button id="TipoTodos" type="button" onclick="DamePokemonesDeTipoEspecifico(3)" >Volador</button></li>
+          <li><button id="TipoTodos" type="button" onclick="DamePokemonesDeTipoEspecifico(4)" >Veneno</button></li>
+          <li><button id="TipoTodos" type="button" onclick="DamePokemonesDeTipoEspecifico(5)" >Tierra</button></li>
+          <li><button id="TipoTodos" type="button" onclick="DamePokemonesDeTipoEspecifico(6)" >Roca</button></li>
+          <li><button id="TipoTodos" type="button" onclick="DamePokemonesDeTipoEspecifico(7)" >Bicho</button></li>
+          <li><button id="TipoTodos" type="button" onclick="DamePokemonesDeTipoEspecifico(8)" >Fantasma</button></li>
+          <li><button id="TipoTodos" type="button" onclick="DamePokemonesDeTipoEspecifico(9)" >Acero</button></li>
+          <li><button id="TipoTodos" type="button" onclick="DamePokemonesDeTipoEspecifico(10)" >Fuego</button></li>
+          <li><button id="TipoTodos" type="button" onclick="DamePokemonesDeTipoEspecifico(11)" >Agua</button></li>
+          <li><button id="TipoTodos" type="button" onclick="DamePokemonesDeTipoEspecifico(12)" >Planta</button></li>
+          <li><button id="TipoTodos" type="button" onclick="DamePokemonesDeTipoEspecifico(13)" >Eléctrico</button></li>
+          <li><button id="TipoTodos" type="button" onclick="DamePokemonesDeTipoEspecifico(14)" >Psíquico</button></li>
+          <li><button id="TipoTodos" type="button" onclick="DamePokemonesDeTipoEspecifico(15)" >Hielo</button></li>
+          <li><button id="TipoTodos" type="button" onclick="DamePokemonesDeTipoEspecifico(16)" >Dragon</button></li>
+          <li><button id="TipoTodos" type="button" onclick="DamePokemonesDeTipoEspecifico(17)" >Siniestro</button></li>
+          <li><button id="TipoTodos" type="button" onclick="DamePokemonesDeTipoEspecifico(18)" >Hada</button></li>
+        </ul>
+     </nav>
+
+    </div ClassClearFix>
+
+      <article id=" Acticulo">
+        <ul id = ListaDePokemones>
+<!-- En este lugar estaran los pokemones -->
+
+        </ul>
+      </article>
+     
+      <aside>
+        <ul>
+          <img id = "ImagenDePokemonSeleccionado" src="https://miro.medium.com/v2/resize:fit:600/0*NsHVyfpJ2k7ixTAd" 
+          alt="Busca un pokemon"
+          width="100""
+          height="100""
+
+          >
+          <li id="Nombre">Nombre: ???</li>
+          <li id="Altura">Altura: ???</li>
+          <li id="Peso">Peso: ???</li>
+          <li id="ExperienciaBase">Experiencia base: ???</li>
+          <li id="Tipo">Tipo: ???</li>
+
+          <li id="Vida">Vida: ???</li>
+          <li id="Ataque">Ataque: ???</li>
+          <li id="Defensa">Defensa: ???</li>
+          <li id="Ataque especial">Ataque especial: ???</li>
+          <li id="Defensa especial">Defensa especial: ???</li>
+          <li id="Speed">Speed: ???</li>
+        </ul>
+      </aside>
+
+      <button id="CargarMasBoton" type="button" onclick="DameMasPokemones(12)">CARGAR MAS</button>
+
+      <footer>
+        <p>Pokeder WEB de Adrian Lorenzo 2024</p>
+      </footer>
+    </div>
+
+    <script src="App.js"></script>
+  </body>
+</html>
